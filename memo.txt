@@ -1,0 +1,8 @@
+~ ❯❯❯ curl -d 't=title1' -d 'b=hello world entry' http://localhost:8080/entry/create
+put entry: IntID= 5629499534213120
+~ ❯❯❯ curl -d 'id=5629499534213120' http://localhost:8080/entry/show
+title:  title1  body:  hello world entry
+~ ❯❯❯ curl -d 'id=5629499534213120' http://localhost:8080/entry/delete
+entyr deleted: IntID= 5629499534213120
+~ ❯❯❯ curl -d 'id=5629499534213120' http://localhost:8080/entry/show
+datastore: no such entity
